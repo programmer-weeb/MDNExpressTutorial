@@ -30,6 +30,8 @@ exports.author_detail = asyncHandler(async (req, res, next) => {
         title: "Author Detail",
         author: author,
         author_books: allBooksByAuthor,
+        // his life span
+        lifespan: author.lifespan,
     });
 });
 
